@@ -1,0 +1,12 @@
+h1 {
+    font-family: 'Passion One', cursive;
+}
+
+h2 {
+    font-family: 'Passion One', cursive;
+}
+.burger-body ul {
+    width: 70%;
+    background-color: brown;
+    border-radius: 5px;
+}
