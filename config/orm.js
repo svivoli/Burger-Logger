@@ -81,6 +81,13 @@ const orm = {
 
             cb(result);
         });
+    },
+    delete: function (tableInput, columnInput, valueInput) {
+        var queryString = "DELETE FROM " + tableInput + " WHERE " + columnInput + " = " + valueInput;
+        connection.query(queryString, function (err, res) {
+            console.log("DELETE CAT FROM DB")
+            if (err) throw err;
+        })
     }
 };
 
