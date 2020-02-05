@@ -36,7 +36,7 @@
                         <ul>
                             {{!-- <li> --}}
                             {{#each burgers}}
-                            {{#unless DEVOURED}}
+                            {{#unless devoured}}
                             {{> burgers/burger-block devoured=true}}
                             {{/unless}}
                             {{/each}}
@@ -54,7 +54,7 @@
                         <ul>
                             {{!-- <li> --}}
                             {{#each burgers}}
-                            {{#if DEVOURED}}
+                            {{#if devoured}}
                             {{> burgers/burger-block devoured=false}}
                             {{/if}}
                             {{/each}}
