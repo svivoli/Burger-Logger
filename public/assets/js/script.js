@@ -5,16 +5,7 @@ $(function () {
         const devouredState = {
             devoured: devour
         };
-        if ($(this).innerText === "CLEAR PLATE") {
-            $.ajax("/api/burgers/" + id, {
-                type: "DELETE"
-            }).then(function () {
-                location.reload();
-            });
-            $(this)
-                .parent()
-                .remove();
-        } else {
+        if ($(this)[0].innerText === "DEVOUR!") {
             // Send the PUT request
             $.ajax("/api/burgers/" + id, {
                 type: "PUT",
@@ -23,6 +14,15 @@ $(function () {
                 // Reload the page to get the updated list
                 location.reload();
             });
+        } else {
+            $.ajax("/api/burgers/" + id, {
+                type: "DELETE"
+            }).then(function () {
+                location.reload();
+            });
+            $(this)
+                .parent()
+                .remove();
         }
     });
 
