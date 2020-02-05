@@ -32,13 +32,13 @@
                     <img width="525" class="bun-top" src="/assets/images/bun-top.png">
                     <div class="burger-body">
                         <ul>
-                            <li>
+                            {{!-- <li> --}}
                                 {{#each burgers}}
                                 {{#unless DEVOURED}}
                                 {{> burgers/burger-block devoured=true}}
                                 {{/unless}}
                                 {{/each}}
-                            </li>
+                            {{!-- </li> --}}
                         </ul>
                     </div>
                     <img width="525" class="bun-bottom" src="/assets/images/bun-bottom.png">
@@ -50,7 +50,7 @@
                     <img width="525" class="bun-top" src="/assets/images/bun-top.png">
                     <div class="burger-body">
                         <ul>
-                            <li>
+                            {{!-- <li> --}}
                                 {{#each burgers}}
                                 {{#if DEVOURED}}
                                 {{> burgers/burger-block devoured=false}}
