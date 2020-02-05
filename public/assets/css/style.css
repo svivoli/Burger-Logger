@@ -1,8 +1,9 @@
 body {
-    background-image: url(../images/diner3.jpg);
+    background-image: url(../images/diner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 h1 {
     color: #EA5720;
     font-family: 'Passion One', cursive;
@@ -11,6 +12,11 @@ h1 {
 h2 {
     color: #EA5720;
     font-family: 'Passion One', cursive;
+}
+
+button {
+    background-color: #655041 !important;
+    border: solid 2px #EA5720 !important;
 }
 
 .card {
@@ -32,9 +38,5 @@ p {
 
 .bun-bottom {
     margin-top: -15px;
-}
-
-button {
-    background-color: #655041 !important;
-    border: solid 2px #EA5720 !important;
+    margin-bottom: 15px;
 }
