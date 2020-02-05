@@ -18,10 +18,12 @@
 
         <div class="row">
             <div class="col">
-                <div class="text-center mb-3">
-                    <input class="form-control-sm" type="text" placeholder="Add a burger">
-                    <button type="button" class="btn btn-primary">Grill It</button>
-                </div>
+                <form class="add-burger">
+                    <div class="form-group text-center mb-3">
+                        <input class="form-control-sm" type="text" placeholder="Add a burger">
+                        <button type="button" class="btn btn-primary">Grill It</button>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -33,11 +35,11 @@
                     <div class="burger-body">
                         <ul>
                             {{!-- <li> --}}
-                                {{#each burgers}}
-                                {{#unless DEVOURED}}
-                                {{> burgers/burger-block devoured=true}}
-                                {{/unless}}
-                                {{/each}}
+                            {{#each burgers}}
+                            {{#unless DEVOURED}}
+                            {{> burgers/burger-block devoured=true}}
+                            {{/unless}}
+                            {{/each}}
                             {{!-- </li> --}}
                         </ul>
                     </div>
@@ -51,11 +53,11 @@
                     <div class="burger-body">
                         <ul>
                             {{!-- <li> --}}
-                                {{#each burgers}}
-                                {{#if DEVOURED}}
-                                {{> burgers/burger-block devoured=false}}
-                                {{/if}}
-                                {{/each}}
+                            {{#each burgers}}
+                            {{#if DEVOURED}}
+                            {{> burgers/burger-block devoured=false}}
+                            {{/if}}
+                            {{/each}}
                             </li>
                         </ul>
                     </div>
