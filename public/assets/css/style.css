@@ -1,12 +1,44 @@
+body {
+    background-image: url(../images/diner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h1 {
+    color: #EA5720;
     font-family: 'Passion One', cursive;
 }
 
 h2 {
+    color: #EA5720;
     font-family: 'Passion One', cursive;
 }
-.burger-body ul {
-    width: 70%;
-    background-color: brown;
-    border-radius: 5px;
+
+.card {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bun-top {
+    margin-bottom: -25px;
+}
+
+.burger-body li {
+    height: 48px;
+    width: 80%;
+    padding-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    list-style: none;
+    color: white;
+    background-color: #5F4A3C;
+    border-radius: 20px;
+}
+
+.bun-bottom {
+    margin-top: -55px;
+}
+
+.btn {
+    background-color: #655041;
+    border: solid 2px #EA5720;
 }

@@ -14,31 +14,40 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center">Burger Logger</h1>
+        <h1 class="text-center mb-3 mt-5">Burger Logger</h1>
 
         <div class="row">
             <div class="col">
-                <div class="card text-center">
-                    <h2>Fresh off the grill</h2>
-                    <img width="525" src="../public/assets/images/bun-top.png">
+                <div class="text-center mb-3">
+                    <input class="form-control-sm" type="text" placeholder="Add a burger">
+                    <button type="button" class="btn btn-primary">Grill It</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card text-center mb-5">
+                    <h2 class="mb-2 mt-3">Waiting to be devoured</h2>
+                    <img width="525" class="bun-top" src="../public/assets/images/bun-top.png">
                     <div class="burger-body">
                         <ul>
-                            test
+                            <li>test <button type="button" class="btn btn-danger">Devour</button></li>
                         </ul>
                     </div>
-                    <img width="525" src="../public/assets/images/bun-bottom.png">
+                    <img width="525" class="bun-bottom" src="../public/assets/images/bun-bottom.png">
                 </div>
             </div>
             <div class="col">
-                <div class="card text-center">
-                    <h2>Devoured</h2>
-                    <img width="525" src="../public/assets/images/bun-top.png">
+                <div class="card text-center mb-5">
+                    <h2 class="mb-2 mt-3">Devoured!</h2>
+                    <img width="525" class="bun-top" src="../public/assets/images/bun-top.png">
                     <div class="burger-body">
                         <ul>
-                            test
+                            <li>test <button type="button" class="btn btn-danger">Clear Plate</button></li>
                         </ul>
                     </div>
-                    <img width="525" src="../public/assets/images/bun-bottom.png">
+                    <img width="525" class="bun-bottom" src="../public/assets/images/bun-bottom.png">
                 </div>
             </div>
         </div>
