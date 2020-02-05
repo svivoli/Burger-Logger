@@ -41,4 +41,14 @@ router.put("/api/burgers/:id", function (req, res) {
     });
 });
 
+router.delete("/api/burgers/:id", function (req, res) {
+    console.log("DELETE THIS BURGER " + req.params.id);
+
+    burger.delete("id", req.params.id, function (result) {
+        if (result.affectedRows > 0) {
+            res.status(200).end();
+        }
+    });
+});
+
 module.exports = router;
