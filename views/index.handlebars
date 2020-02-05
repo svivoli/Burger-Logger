@@ -33,6 +33,11 @@
                     <div class="burger-body">
                         <ul>
                             <li>
+                                {{#each burgers}}
+                                {{#unless DEVOURED}}
+                                {{> burgers/burger-block devoured=true}}
+                                {{/unless}}
+                                {{/each}}
                             </li>
                         </ul>
                     </div>
@@ -46,6 +51,11 @@
                     <div class="burger-body">
                         <ul>
                             <li>
+                                {{#each burgers}}
+                                {{#if DEVOURED}}
+                                {{> burgers/burger-block devoured=false}}
+                                {{/unless}}
+                                {{/each}}
                             </li>
                         </ul>
                     </div>
