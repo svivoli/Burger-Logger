@@ -29,7 +29,7 @@
             <div class="col">
                 <div class="card text-center mb-5">
                     <h2 class="mb-2 mt-3">Waiting to be devoured</h2>
-                    <img width="525" class="bun-top" src="../public/assets/images/bun-top.png">
+                    <img width="525" class="bun-top" src="/assets/images/bun-top.png">
                     <div class="burger-body">
                         <ul>
                             <li>
@@ -41,25 +41,25 @@
                             </li>
                         </ul>
                     </div>
-                    <img width="525" class="bun-bottom" src="../public/assets/images/bun-bottom.png">
+                    <img width="525" class="bun-bottom" src="/assets/images/bun-bottom.png">
                 </div>
             </div>
             <div class="col">
                 <div class="card text-center mb-5">
                     <h2 class="mb-2 mt-3">Devoured!</h2>
-                    <img width="525" class="bun-top" src="../public/assets/images/bun-top.png">
+                    <img width="525" class="bun-top" src="/assets/images/bun-top.png">
                     <div class="burger-body">
                         <ul>
                             <li>
                                 {{#each burgers}}
                                 {{#if DEVOURED}}
                                 {{> burgers/burger-block devoured=false}}
-                                {{/unless}}
+                                {{/if}}
                                 {{/each}}
                             </li>
                         </ul>
                     </div>
-                    <img width="525" class="bun-bottom" src="../public/assets/images/bun-bottom.png">
+                    <img width="525" class="bun-bottom" src="/assets/images/bun-bottom.png">
                 </div>
             </div>
         </div>
