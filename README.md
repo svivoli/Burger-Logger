@@ -2,7 +2,7 @@
 
 ## Links to Project
 
-[Live Link](https://stark-everglades-05320.herokuapp.com/)
+[Live Link](https://stark-everglades-05320.herokuapp.com/)  
 [Github Repository](https://github.com/svivoli/Burger-Logger)
 
 ## Description
@@ -33,10 +33,10 @@ A burger logger that allows users to log different types of burgers they want to
 
 ## User Experience
 
-![Burger-Logger](Demo.png)
+![Burger-Logger](/public/assets/images/Demo.png)
 
 ## Developer Experience
 
-This project was a fun challenge. I find handlebars to be a cool and useful tool in the coding world. I also learned with this project that I had to pay close attention to what order I was writing my code accross multiple files, which helped me to become more familiar with the functions of the different extensions and files. 
+This project felt fun and structured. I find handlebars to be a cool and useful tool in the coding world. I also learned with this project that I had to pay close attention to what order I was writing my code accross multiple files, which helped me to become more familiar with the functions of the different extensions and files. 
 
 --Sarah Vivoli
